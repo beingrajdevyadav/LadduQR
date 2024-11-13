@@ -6,3 +6,124 @@
     box-sizing: border-box;
     font-family: "Poppins", serif;
 }
+
+body{
+    background-color: #f1f1f1;
+}
+
+header{
+    padding:1rem 1rem;
+    /* background-color: #313030; */
+    box-shadow: 0px 2px 6px #999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ddd;
+}
+header a{
+    color: #313030;
+    font-size: 30px;
+    margin-right: .5rem;
+}
+.logo{
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+.logo .fn{
+    font-size: 30px;
+    color: #313030;
+}
+.logo .ln{
+    font-size: 35px;
+    color: #b21e37;
+
+}
+/* main  */
+main{
+    padding: 4rem 2rem;
+    color: #313030;
+    /* background-color: #fff; */
+}
+.rd{
+    color: #b21e37;
+}
+.qr-container{
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid; */
+    padding: 1rem;
+    text-align: center;
+}
+.qr-form{
+    background-color: #fff;
+    padding: 1rem;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px #999;
+
+}
+.qr-form img{
+    width: 60%;
+}
+.qr-form input{
+    width: 100%;
+    padding: 10px;
+    outline-color: #b21e37;
+    color: #464444fd;
+}
+
+.qr-result{
+    box-shadow: 0px 2px 6px #999;
+    background-color: #fff;
+    padding: 1rem;
+/* width: 30%; */
+border-radius: 5px;
+}
+.qr-box{
+    border: 1px dashed #313030;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+
+.qr-container button{
+    width: 100%;
+    padding: 15px 0;
+    background-color: #b21e37;
+    color: #ddd;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: .5rem;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+.qr-container button:hover{
+    background-color: #cd2844;
+}
+/* footer  */
+footer{
+    padding:1.5rem 2rem;
+    text-align: center;
+    color: #ddd;
+    background-color: #313030;
+    
+}
+footer p{
+    font-size: 12px;
+}
+footer .footer-links{
+    margin-top: 10px;
+}
+footer a{
+    font-size: 30px;
+    color: #ddd;
+    margin:  .5rem;
+}
+footer .quotes i{
+    font-size: 12px;
+}
