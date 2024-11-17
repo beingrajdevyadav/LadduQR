@@ -5,7 +5,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", serif;
-    /* border: 1px solid; */
 }
 
 body {
@@ -13,13 +12,13 @@ body {
 }
 
 header {
-    padding: 1rem 1rem;
+    padding: 1rem;
     box-shadow: 0px 2px 6px #999;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #ddd;
-    
+
 }
 
 header a {
@@ -123,12 +122,14 @@ section {
     align-items: center;
     margin-top: 1rem;
 }
-.feature-item{
+
+.feature-item {
     background-color: #ffffff3f;
     padding: 1rem;
     border-radius: 10px;
     width: 27%;
 }
+
 .feature-item-icon {
     background-color: #ddd;
     color: purple;
@@ -159,13 +160,7 @@ section {
 
 }
 
-.qr-form-container {
-    width: 30%;
-    border-radius: 5px;
-    /* box-shadow: 0px 2px 6px #999; */
-    background-color: #fff;
 
-}
 
 .qr-form {
     padding: 1rem;
@@ -186,16 +181,19 @@ section {
     border-radius: 5px;
     border: none;
 }
-.qr-form .qr-form-upper-content{
+
+.qr-form .qr-form-upper-content {
     text-align: start;
     padding: 1rem;
     color: #ddd;
 }
-.qr-form-upper-content ol{
+
+.qr-form-upper-content ol {
     padding: 1rem;
 }
+
 .qr-result {
-    /* box-shadow: 0px 2px 6px #999; */
+   
     padding: 1rem;
     width: 30%;
     border-radius: 5px 2rem;
@@ -229,17 +227,21 @@ section {
     background-color: #cd2844;
 
 }
+
 .qr-container button:disabled {
     background-color: #313030;
     cursor: not-allowed;
 }
+
 .qr-container button:hover {
     background-color: #b21e37;
 
 }
-.qr-container button:disabled:hover{
+
+.qr-container button:disabled:hover {
     background-color: #313030;
 }
+
 /* ==============  qr-benefits ===========  */
 .qr-benefits {
     padding: 2rem;
@@ -247,13 +249,14 @@ section {
     height: 80vh;
     color: #ddd;
 }
-.qr-benefits h2{
+
+.qr-benefits h2 {
     font-size: 3rem;
     text-align: center;
     text-transform: capitalize;
 }
 
-.benefits-wrapper{
+.benefits-wrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -261,7 +264,8 @@ section {
     text-align: center;
     margin-top: 2rem;
 }
-.benefit-item{
+
+.benefit-item {
     width: 40%;
     /* border: 1px solid; */
     padding: 1rem;
@@ -269,7 +273,8 @@ section {
     margin: 1rem;
     border-radius: 10px;
 }
-.benefit-item-icon{
+
+.benefit-item-icon {
     font-size: 25px;
     background-color: #ddd;
     color: purple;
@@ -281,13 +286,14 @@ section {
     justify-content: center;
     align-items: center;
 }
+
 /* footer  */
 footer {
     padding: 1.5rem 2rem;
     text-align: center;
     color: #ddd;
     background-color: #313030;
-background: linear-gradient(from right, #313030, #222);
+    background: linear-gradient(from right, #313030, #222);
 }
 
 footer p {
@@ -306,4 +312,120 @@ footer a {
 
 footer .quotes i {
     font-size: 12px;
+}
+
+
+/* ============ media query starts here ============  */
+@media (min-width:250px) and (max-width:480px) {
+
+    /* header section */
+    header {
+        padding: .5rem 1rem;
+    }
+
+    .logo .fn {
+        font-size: 18px;
+    }
+
+    .logo .ln {
+        font-size: 24px;
+    }
+
+    header a {
+        font-size: 18px;
+    }
+
+    /* welcome section */
+    .welcome {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .welcome img {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .welcome .text {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .welcome .wht-bg {
+        padding: 1rem;
+    }
+
+    .wrapper-item {
+        padding: .5rem 0;
+    }
+
+    .wrapper-item-icon {
+        font-size: 20px;
+    }
+
+    .wrapper-item-content {
+        font-size: 12px;
+    }
+
+    /* qr features */
+    .qr-features {
+        padding: 1rem;
+        height: auto;
+    }
+    .qr-features h2{
+        font-size: 2rem;
+    }
+.features-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.feature-item{
+    width: 90%;
+    margin: 1rem auto;
+}
+
+/* qr container */
+    .qr-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+    }
+    .qr-form{
+        width: 90%;
+        padding:1rem .5rem;
+    }
+    .qr-form .qr-form-upper-content{
+        padding: .5rem;
+    }
+    .qr-form .qr-form-upper-content h3{
+        font-size: 16px;
+    }
+    .qr-form-upper-content ol{
+        font-size: 14px;
+        padding: .5rem;
+    }
+    .qr-result{
+        width: 90%;
+    }
+    .qr-box{
+        width: 200px;
+        height: 200px;
+    }
+
+    /* qr benefits */
+    .qr-benefits{
+        padding: 1rem;
+        height: auto;
+    }
+    .qr-benefits h2{
+        font-size: 2rem;
+    }
+    .benefit-item{
+        width: 90%;
+    }
 }
