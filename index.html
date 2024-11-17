@@ -122,14 +122,15 @@
                 </ol>
             </div>
 
-            <input type="text" placeholder="Enter Text or Paste URL" id="qr-input-text">
+            <input type="text" autocomplete="off" placeholder="Enter Text or Paste URL" id="qr-input-text">
             <button id="generate-qr-btn">Generate QR</button>
         </div>
         <div class="qr-result">
             <div class="qr-box">
-                <img src="https://cdn.pixabay.com/animation/2023/11/30/10/11/10-11-02-622_512.gif" alt="" class="qr-img">
+                <img src="https://cdn.pixabay.com/animation/2023/11/30/10/11/10-11-02-622_512.gif" alt="" class="qr-img" id="qr-img">
             </div>
-            <button>Download QR</button>
+            <button disabled id="download-qr-btn">Download QR</button>
+            
         </div>
 
 

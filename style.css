@@ -229,12 +229,17 @@ section {
     background-color: #cd2844;
 
 }
-
+.qr-container button:disabled {
+    background-color: #313030;
+    cursor: not-allowed;
+}
 .qr-container button:hover {
     background-color: #b21e37;
 
 }
-
+.qr-container button:disabled:hover{
+    background-color: #313030;
+}
 /* ==============  qr-benefits ===========  */
 .qr-benefits {
     padding: 2rem;
